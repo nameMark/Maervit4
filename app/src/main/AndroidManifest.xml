@@ -13,24 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="ExtraText,GoogleAppIndexingWarning">
+        <activity android:name=".Faq"></activity>
         <activity
             android:name=".MainActivity"
             android:label="Ekoshopka" />
-
-        <activity
-            android:name=".HomeActivity">
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Main2Activity"
-            android:label="Liner"/>
-
-        <activity android:name=".Onas"
-            android:parentActivityName=".MainActivity"/>
-
+        <activity
+            android:name=".Main2Activity"
+            android:label="Liner" />
+        <activity
+            android:name=".Onas"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
     </application>
 
 </manifest>

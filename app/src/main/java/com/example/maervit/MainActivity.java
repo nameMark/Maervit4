@@ -71,11 +71,12 @@ public class MainActivity extends AppCompatActivity {
         //SimplifiableIfStatement
         switch (item.getItemId()){
             case R.id.about:
-                Toast.makeText(this, "About us", Toast.LENGTH_LONG).show();
+                //Toast.makeText(this, "About us", Toast.LENGTH_LONG).show();
                 openOnas();
                 return true;
             case R.id.faq:
-                Toast.makeText(this, "Faq", Toast.LENGTH_LONG).show();
+                //Toast.makeText(this, "Faq", Toast.LENGTH_LONG).show();
+                openFAQ();
                 return true;
         }
 
@@ -85,12 +86,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void openMainActivity2(){
         Intent intent = new Intent(this, Main2Activity.class);
-        startActivity(intent );
+        startActivity(intent);
     }
 
     public void openOnas(){
         Intent intent = new Intent(this, Onas.class);
-        startActivity(intent );
+        startActivity(intent);
+    }
+    public void openFAQ(){
+        Intent intent = new Intent(this, Faq.class);
+        startActivity(intent);
     }
 }
 

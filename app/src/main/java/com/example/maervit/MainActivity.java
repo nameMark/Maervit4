@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
     }
 
     public  void scanCode (View v) {
@@ -70,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.about:
                 Toast.makeText(this, "About us", Toast.LENGTH_LONG).show();
+                openOnas();
                 return true;
             case R.id.faq:
                 Toast.makeText(this, "Faq", Toast.LENGTH_LONG).show();
@@ -82,6 +85,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openMainActivity2(){
         Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent );
+    }
+
+    public void openOnas(){
+        Intent intent = new Intent(this, Onas.class);
         startActivity(intent );
     }
 }

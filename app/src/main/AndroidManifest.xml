@@ -26,9 +26,10 @@
         </activity>
 
         <activity android:name=".Main2Activity"
-            android:label="Liner" ></activity>
+            android:label="Liner"/>
 
-        <activity android:name=".Onas"/>
+        <activity android:name=".Onas"
+            android:parentActivityName=".MainActivity"/>
 
     </application>
 
